@@ -1,0 +1,70 @@
+.order {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    max-width: 480px;
+    padding: 118px;
+    margin: 0 auto;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+        ),
+        url(../images/heroimg.jpg);
+    background-size: cover;
+    background-color: #c4c4c4;
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        & {
+            background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+                url(../../images/hero/_1600.jpg);
+        }
+    }
+
+        @media (min-device-pixel-ratio: 3),
+        (min-resolution: 288dpi),
+        (min-resolution: 3dppx) {
+            & {
+                background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+                    url(../../images/hero/_480.jpg);
+            }
+        }
+}
+  
+.order__tittle {
+    width: 696px;
+    height: 120px;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.4;
+    letter-spacing: 0.06em;
+    color: $title-second-color;
+    margin-bottom: 30px;
+}
+  
+.order__buton {
+    width: 216px;
+    height: 50px;
+    left: 692px;
+    top: 430px;
+  
+    font-weight: 700;
+    font-size: 16px;
+    list-style-type: none;
+    line-height: 1.9;
+    text-align: center;
+    color: $button-second-color;
+  
+    display: flex;
+    cursor: pointer;
+    border-color: $accent-color;
+    background: $accent-color;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    margin: 0 auto;
+    padding: 10px 32px;
+    border-radius: 8px;
+}

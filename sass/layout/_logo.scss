@@ -1,0 +1,32 @@
+.logotip {
+    margin-bottom: 24px;
+    margin-top: 25px;
+    margin-right: 93px;
+    text-decoration: none;
+    cursor: pointer;
+
+  &:hover {
+    text-decoration: underline $accent-color;
+  }
+  &:focus {
+    outline: 2px solid $accent-color;
+  }
+}
+ 
+.logo-web {
+    font-family: $title-font;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    color: $accent-color;
+}
+  
+.logo-studio {
+    font-family: $title-font;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    color: #000000;
+}

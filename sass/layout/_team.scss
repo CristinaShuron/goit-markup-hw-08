@@ -1,0 +1,99 @@
+.team {
+    background: #f5f4fa;
+  }
+  
+.team__title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: $main-color;
+    margin-top: 0px;
+    margin-bottom: 50px;
+    padding-top: 94px;
+}
+  
+.team__list {
+    display: flex;
+    list-style: none;
+    padding-bottom: 94px;
+    padding-left: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+
+  .social__list {
+    display: flex;
+    margin-top: 16px;
+    justify-content: center;
+  }
+  .social__item {
+    width: 44px;
+    height: 44px;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  .social__link {
+    width: 100%; 
+    height: 100%;
+    background: $second-color;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .social__item:last-child {
+    margin-right: 0px;
+  }
+}
+
+.team__item {
+    flex-basis: calc((100% - 270px) / 4);
+    margin-right: 30px;
+    width: 270px;
+    height: 428px;
+    background: $second-color;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    padding-bottom: 94px;
+  
+  &:nth-child(4n) {
+    margin-right: -30px; /*4 елементу -30рх зправа */
+  }
+}
+  
+.team__people {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.2;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $main-color;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.team__career {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.2;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $accent-second-color;
+}
+
+.social__link {
+  &:hover {
+    background-color: $accent-color;
+  }
+  &:hover .social__icon {
+    fill: $second-color;
+  }
+}
+  
+.social__icon {
+    width: 22px;
+    height: 22px;
+    fill: $icon-color;
+}
