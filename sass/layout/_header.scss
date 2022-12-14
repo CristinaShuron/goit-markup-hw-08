@@ -1,32 +1,47 @@
-.header__page { 
-  padding-top: 16px;
-  padding-bottom: 16px;
-  background: $second-color;
+.header__page {
   border-bottom: 1px solid #ececec;
-
-
-.container {
-  display: flex; 
-  align-items: center; 
-}
 }
 
-.header__nav {
-  display: none;
+.header__container {
+  display: flex;
+  align-items: center;
 }
 
 .header__nav-list {
-    display: none;
-    // display: flex;
+  display: flex;
 
-  .header__item:not(:first-child) {
+  @media screen and (max-width: 480px) {
+    display: none;
+  }
+  @media screen and (min-width: 768px) {
+    margin-left: 88px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-left: 93px;
+  }
+
+}
+
+.header__item:not(:first-child) {
+  @media screen and (min-width: 768px) {
     margin-left: 50px;
   }
-  .head {
+  @media screen and (min-width: 1200px) {
+    margin-left: 50px;
+  }
+}
+
+.head {
+  @media screen and (min-width: 768px) {
     position: relative;
   }
-    
-  .head::after {
+  @media screen and (min-width: 1200px) {
+    position: relative;
+  }
+}
+
+.head::after {
+  @media screen and (min-width: 1200px) {
     content: " ";
     display: block;
     background: $accent-color;
@@ -36,11 +51,12 @@
     width: 100%;
     position: absolute;
     top: 46px;
-  } 
+  }
 }
 
-  
+
 .header__link {
+  @media screen and (min-width: 1200px) {
     font-size: 14px;
     line-height: 1.1;
     letter-spacing: 0.02em;
@@ -48,43 +64,61 @@
     margin-right: 30;
     margin-top: 32;
 
-  &:hover, &:focus {
-    color: $accent-color;
+    &:hover,
+    &:focus {
+      color: $accent-color;
+    }
   }
 }
-    
+
+
 .header-contacts {
-  display: none;
-    // margin-left: auto;
+  @media screen and (max-width: 480px) {
+    display: none;
   }
 
+  @media screen and (min-width: 1200px) {
+    margin-left: auto;
+  }
+}
+
+
+
 .tel {
+  @media screen and (min-width: 1200px) {
     color: $accent-second-color;
     margin-left: 50px;
   }
+}
 
 .mail {
+  @media screen and (min-width: 1200px) {
     color: $accent-color;
   }
-  
+}
+
 .enveloper {
+  @media screen and (min-width: 1200px) {
     width: 16px;
     height: 12px;
     fill: $icon-color;
     margin-right: 10px;
 
-  &:hover {
-    fill: $accent-color;
+    &:hover {
+      fill: $accent-color;
+    }
   }
 }
-  
+
 .smartphone {
+  @media screen and (min-width: 1200px) {
     width: 10px;
     height: 16px;
     fill: $icon-color;
     margin-right: 10px;
 
-  &:hover {
-    fill: $accent-color;
+    &:hover {
+      fill: $accent-color;
+    }
   }
 }

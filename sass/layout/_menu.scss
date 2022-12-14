@@ -1,88 +1,157 @@
+header__nav {
+  display: none;
+}
+
+
 .menu {
-    display: flex;
-    padding: 0;
-    margin: 0;
-    list-style: none;
-  }
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style: none;
   
-  @media (max-width: 767px) {
-    .menu {
-      display: none;
-    }
+}
+
+@media (max-width: 767px) {
+  .menu {
+    display: none;
   }
-  
-  .menu .link {
-    padding: 10px;
-    color: inherit;
-    text-decoration: none;
-  }
-  
-  .menu .link:hover,
-  .menu .link:focus {
-    text-decoration: underline;
-  }
-  
+}
+
+.menu .link {
+  padding: 10px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.menu .link:hover,
+.menu .link:focus {
+  text-decoration: underline;
+}
+
+.menu-toggle {
+  min-height: 40px;
+  min-width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-left: auto;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  outline: none;
+  margin-right: 15px;
+}
+
+@media (min-width: 768px) {
   .menu-toggle {
-    min-height: 40px;
-    min-width: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: none;
+  }
+}
+
+.menu-toggle:hover,
+.menu-toggle:focus {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.menu-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  display: flex;
+  flex-direction: column;
+  width: 480px;
+  height: 796px;
+  padding: 48px 40px;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
+  z-index: 999;
+
+  transform: translateX(100%);
+  transition: transform 250ms ease-in-out;
+}
+
+.menu-container.is-open {
+  transform: translateX(0);
+}
+
+.menu-container .menu-toggle {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  color: #212121;
+}
+
+.mobile-menu {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  margin-bottom: auto;
+}
+
+.mobile-menu .link {
+  display: block;
+  padding-bottom: 32px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #212121;
+
+ .link:first-of-type {
+  color: #2196F3;
+  }
+}
+
+.mobile-contacts {
+  display: block;
+  padding-left: 0;
   
-    margin-left: auto;
-    padding: 0;
-    background-color: transparent;
-    cursor: pointer;
-    border: none;
-    border-radius: 50%;
-    outline: none;
+  .link {
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    color: #2196F3;
+    } 
+  .infomail {
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 1.6;
+      letter-spacing: 0.02em;
+      color: #757575;
+   
+  }
+}
+
+.mobile-socials {
+  display: inline-block;
+  padding-top: 64px;
+   
+  .mobile-socials-item {
+    display: inline;
+    text-align: center;
+    align-items: flex-end;
+  }
+  .mobile-socials-link {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.22;
+    letter-spacing: 0.02em;
+    color: #2196F3;
+  }
+}
+  .mobile-socials li::after {
+    content: "|";
+    width: 22px;
+    color: 1px solid rgba(33, 33, 33, 0.2);
+    transform: rotate(90deg);
+  }
+  .mobile-socials li:last-child::after {
+    display: none;
   }
   
-  @media (min-width: 768px) {
-    .menu-toggle {
-      display: none;
-    }
-  }
-  
-  .menu-toggle:hover,
-  .menu-toggle:focus {
-    background-color: rgba(0, 0, 0, 0.1);
-  }
-  
-  .menu-container {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    padding: 32px;
-    background-color: #3f51b5;
-    z-index: 999;
-  
-    transform: translateX(100%);
-    transition: transform 250ms ease-in-out;
-  }
-  
-  .menu-container.is-open {
-    transform: translateX(0);
-  }
-  
-  .menu-container .menu-toggle {
-    position: absolute;
-    top: 16px;
-    right: 16px;
-    color: #fff;
-  }
-  
-  .mobile-menu {
-    padding: 0;
-    margin: 0;
-    list-style: none;
-  }
-  
-  .mobile-menu .link {
-    display: block;
-    padding: 10px;
-    color: #fff;
-    text-decoration: none;
-  }

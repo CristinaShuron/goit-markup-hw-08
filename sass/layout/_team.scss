@@ -1,26 +1,57 @@
 .team {
     background: #f5f4fa;
+    padding-top: 30px;
   }
   
 .team__title {
     font-weight: 700;
-    font-size: 36px;
-    line-height: 1.2;
+    height: 33px;
+    font-size: 28px;
+    line-height: 1.7;
     letter-spacing: 0.03em;
     text-align: center;
     color: $main-color;
-    margin-top: 0px;
-    margin-bottom: 50px;
-    padding-top: 94px;
-}
+    margin-bottom: 30px;
+   
+    @media screen and (min-width: 768px) {
+      line-height: 1.17;
+    }
+    @media screen and (min-width: 1200px) {
+      font-size: 36px;
+      line-height: 1.2;
+      margin-top: 0px;
+      margin-bottom: 50px;
+      padding-top: 94px;
+    }
+   }
   
 .team__list {
-    display: flex;
     list-style: none;
-    padding-bottom: 94px;
+    padding-bottom: 60px;
     padding-left: 0px;
     margin-top: 0px;
     margin-bottom: 0px;
+
+    @media screen and (min-width: 768px) {
+      display: flex; 
+      flex-direction: row;
+      flex-wrap: wrap;
+      width: 768px;
+      column-count: 2;
+      padding-bottom: 0px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      display: flex;
+      justify-content: center;
+      width: 1170px;
+      height: 428px;
+      list-style: none;
+      padding-bottom: 94px;
+      padding-left: 0px;
+      margin-top: 0px;
+      margin-bottom: 0px;
+    }
 
   .social__list {
     display: flex;
@@ -48,8 +79,32 @@
 }
 
 .team__item {
+    margin-bottom: 30px;
+    width: 450px;
+    height: 622px;
+    background: $second-color;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+      
+  &:nth-child(4n) {
+    margin-bottom: 60px; 
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 354px;
+    height: 536px;
+  
+    &:nth-last-child(-n + 2) {
+     margin-bottom: 60px;
+    }
+    &:nth-child(2n+1 ) {
+      margin-right: 30px;
+   }
+  }
+
+  @media screen and (min-width: 1200px) {
     flex-basis: calc((100% - 270px) / 4);
-    margin-right: 30px;
     width: 270px;
     height: 428px;
     background: $second-color;
@@ -57,10 +112,13 @@
         0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
     padding-bottom: 94px;
+    margin-right: 30px;
   
-  &:nth-child(4n) {
-    margin-right: -30px; /*4 елементу -30рх зправа */
+    &:nth-child(4n) {
+      margin-right: -30px; /*4 елементу -30рх зправа */
+    }
   }
+  
 }
   
 .team__people {
