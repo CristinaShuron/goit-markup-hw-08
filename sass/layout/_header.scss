@@ -5,6 +5,7 @@
 .header__container {
   display: flex;
   align-items: center;
+  
 }
 
 .header__nav-list {
@@ -41,6 +42,17 @@
 }
 
 .head::after {
+  @media screen and (min-width: 768px) {
+    content: " ";
+    display: block;
+    background: $accent-color;
+    height: 4px;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    position: absolute;
+    top: 46px;
+    }
   @media screen and (min-width: 1200px) {
     content: " ";
     display: block;
@@ -56,6 +68,19 @@
 
 
 .header__link {
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: 1.1;
+    letter-spacing: 0.02em;
+    color: $main-color;
+    margin-right: 30;
+    margin-top: 32;
+
+    &:hover,
+    &:focus {
+      color: $accent-color;
+    }
+  }
   @media screen and (min-width: 1200px) {
     font-size: 14px;
     line-height: 1.1;
@@ -73,18 +98,33 @@
 
 
 .header-contacts {
+  margin-left: auto;
   @media screen and (max-width: 480px) {
     display: none;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 768px) {
     margin-left: auto;
+    display: flex;
+    flex-flow: column wrap;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+  
   }
 }
 
 
 
 .tel {
+  @media screen and (min-width: 768px) {
+    color: $accent-second-color;
+    margin-right: 0px;
+  }
+  
   @media screen and (min-width: 1200px) {
     color: $accent-second-color;
     margin-left: 50px;
@@ -92,12 +132,26 @@
 }
 
 .mail {
+  @media screen and (min-width: 768px) {
+    color: $accent-color;
+    margin-right: 0px;
+  }
   @media screen and (min-width: 1200px) {
     color: $accent-color;
   }
 }
 
 .enveloper {
+  @media screen and (min-width: 768px) {
+    width: 16px;
+    height: 12px;
+    fill: $icon-color;
+    margin-right: 10px;
+
+    &:hover {
+      fill: $accent-color;
+    }
+  }
   @media screen and (min-width: 1200px) {
     width: 16px;
     height: 12px;
@@ -111,6 +165,16 @@
 }
 
 .smartphone {
+  @media screen and (min-width: 768px) {
+       width: 10px;
+      height: 16px;
+      fill: $icon-color;
+      margin-right: 10px;
+  
+      &:hover {
+        fill: $accent-color;
+      }
+    }
   @media screen and (min-width: 1200px) {
     width: 10px;
     height: 16px;

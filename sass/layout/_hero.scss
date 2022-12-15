@@ -1,117 +1,94 @@
 .order {
-    max-width: 480px;
-    height: 400px;
-        margin-left: auto;
-    margin-right: auto;
+    padding-top: 200px;
+    padding-bottom: 200px;
     background-color: #c4c4c4;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
   
     background-image: linear-gradient(
         rgba(47, 48, 58, 0.4),
-             ),
-      url(); 
-    background-size: 480px;
-    background-repeat: no-repeat;
-    background-position: center;
-}
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/hero/img_mob1x.jpg);
+  
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../images/hero/img_mob2x.jpg);
+    }
+  
+    @media screen and (min-width: 768px) {
+      background-image: linear-gradient(
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../images/hero/img_tab1x.jpg);
+  
+      @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: linear-gradient(
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)
+          ),
+          url(../images/hero/img_tab2x.jpg);
+      }
+    }
 
-// @media screen and (min-width: 768px) {
-//     .order {
-//         max-width: 768px;
-//         height: 400px;
-//         padding-top: 200px;
-//         padding-bottom: 200px;
-//         margin-left: auto;
-//         margin-right: auto;
-//         background-color: #c4c4c4;
-      
-//         background-image: linear-gradient(
-//             rgba(47, 48, 58, 0.4),
-//                  ),
-//           url(../../images/hero/_768.jpg); 
-//         background-size: 768px;
-//         background-repeat: no-repeat;
-//         background-position: center;
-//     }
-// }
-// @media screen and (min-width: 1600px) {
-//     .order {
-//         max-width: 1600px;
-//         height: 600px;
-//         padding-top: 200px;
-//         padding-bottom: 200px;
-//         margin-left: auto;
-//         margin-right: auto;
-//         background-color: #c4c4c4;
-      
-//         background-image: linear-gradient(
-//             rgba(47, 48, 58, 0.4),
-//                  ),
-//           url(../../images/hero/_1600.jpg); 
-//         background-size: 1600px;
-//         background-repeat: no-repeat;
-//         background-position: center;
-//     }
-// }
+    @media screen and (min-width: 1200px) {
+        background-image: linear-gradient(
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)
+          ),
+          url(../images/hero/img_des1x.jpg);
+    
+        @media (min-device-pixel-ratio: 2),
+          (min-resolution: 192dpi),
+          (min-resolution: 2dppx) {
+          background-image: linear-gradient(
+              rgba(47, 48, 58, 0.4),
+              rgba(47, 48, 58, 0.4)
+            ),
+            url(../images/hero/img_des2x.jpg);
+        }
+      }
+    }
   
 .order__tittle {
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
     width: 360px;
-    margin: 0 auto;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+    color: $title-second-color;
     font-weight: 900;
     font-size: 26px;
-    line-height: 1.6;
+    line-height: 1.61;
+    text-align: center;
     letter-spacing: 0.06em;
-    color: $title-second-color;
-    padding: 118px 0px 30px;
-}
-
-// @media screen and (min-width: 768px) {
-//     .order__tittle {
-//         width: 360px;
-//         height: 84px;
-//         margin: 0 auto;
-//         justify-content: center;
-//         align-items: center;
-//         text-align: center;
-
-//         font-weight: 900;
-//         font-size: 26px;
-//         line-height: 1.6;
-//         letter-spacing: 0.06em;
-//         color: $title-second-color;
-//         margin-bottom: 30px;
-//     }
-// }
-
-// @media screen and (min-width: 1600px) {
-//     .order__tittle {
-//         width: 696px;
-//         height: 120px;
-//         margin: 0 auto;
-//         justify-content: center;
-//         align-items: center;
-//         text-align: center;
-//         font-weight: 900;
-//         font-size: 44px;
-//         line-height: 1.4;
-//         letter-spacing: 0.06em;
-//         color: $title-second-color;
-//         margin-bottom: 30px;
-//     }
-// }
-
+    text-transform: uppercase;
+  
+    @media screen and (min-width: 1200px) {
+      width: 696px;
+      font-size: 44px;
+      line-height: 1.36;
+    }
+  }
+  
 .order__buton {
-    width: 200px;
+    width: 216px;
     height: 50px;
-    left: 140px;
-    top: 292px;
+    left: 692px;
+    top: 430px;
   
     font-weight: 700;
     font-size: 16px;
     list-style-type: none;
-    line-height: 1.88;
+    line-height: 1.9;
     text-align: center;
     color: $button-second-color;
   
@@ -121,55 +98,6 @@
     background: $accent-color;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     margin: 0 auto;
-    padding: 10px 24px;
+    padding: 10px 32px;
     border-radius: 8px;
-    }
-
-// @media screen and (min-width: 768px) {
-// .order__buton {
-//     width: 216px;
-//     height: 50px;
-//     left: 692px;
-//     top: 430px;
-  
-//     font-weight: 700;
-//     font-size: 16px;
-//     list-style-type: none;
-//     line-height: 1.9;
-//     text-align: center;
-//     color: $button-second-color;
-  
-//     display: flex;
-//     cursor: pointer;
-//     border-color: $accent-color;
-//     background: $accent-color;
-//     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-//     margin: 0 auto;
-//     padding: 10px 32px;
-//     border-radius: 8px;
-// }
-// }
-// @media screen and (min-width: 1600px) {
-//     .order__buton {
-//         width: 216px;
-//         height: 50px;
-//         left: 692px;
-//         top: 430px;
-      
-//         font-weight: 700;
-//         font-size: 16px;
-//         list-style-type: none;
-//         line-height: 1.9;
-//         text-align: center;
-//         color: $button-second-color;
-      
-//         display: flex;
-//         cursor: pointer;
-//         border-color: $accent-color;
-//         background: $accent-color;
-//         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-//         margin: 0 auto;
-//         padding: 10px 32px;
-//         border-radius: 8px;
-//     }
-//     }
+}

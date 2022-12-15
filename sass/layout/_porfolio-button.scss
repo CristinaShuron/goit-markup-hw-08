@@ -4,16 +4,26 @@
 }
   
 .work__button-portfolio {
-    height: 54px;
-    top: 174px;
-    display: flex;
-    font-weight: 500;
-    list-style-type: none;
-    font-size: 16px;
-    line-height: 1.6;
-    text-align: center;
-    color: $button-first-color;
+  display: flex;
+  justify-content: flex-start;
+  width: 480px;
+  flex-wrap: wrap;
+  margin-bottom: 34px;
+  list-style-type: none;
+
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+    flex-wrap: nowrap;
+    width: 768px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    justify-content: center;
+    flex-wrap: nowrap;
+    width: 1200px;
+  }
 }
+
   
 .work__button-oll {
     width: 73px;
@@ -29,9 +39,9 @@
     text-align: center;
     letter-spacing: 0.03em;
     color: $button-first-color;
-    padding: 6px 25px;
-    margin: 0px 8px 0px 300px;
     border-radius: 8px;
+    margin-right: 8px;
+    margin-bottom: 15px;
 
   &:hover {
     outline: none;
@@ -62,8 +72,9 @@
     text-align: center;
     letter-spacing: 0.03em;
     color: $button-first-color;
-    margin: 0px 8px 0px 0px;
     border-radius: 8px;
+    margin-right: 8px;
+    margin-bottom: 15px;
 
   &:hover {
     outline: none;
@@ -94,8 +105,9 @@
     text-align: center;
     letter-spacing: 0.03em;
     color: $button-first-color;
-    margin: 0px 8px 0px 0px;
     border-radius: 8px;
+    margin-right: 8px;
+    margin-bottom: 15px;
 
   &:hover {
     outline: none;
@@ -126,8 +138,8 @@
     text-align: center;
     letter-spacing: 0.03em;
     color: $button-first-color;
-    margin: 0px 8px 0px 0px;
     border-radius: 8px;
+    margin-right: 8px;
 
   &:hover {
     outline: none;
@@ -158,8 +170,8 @@
     text-align: center;
     letter-spacing: 0.03em;
     color: $button-first-color;
-    margin: 0px 8px 0px 0px;
     border-radius: 8px;
+  
 
   &:hover {
     outline: none;
