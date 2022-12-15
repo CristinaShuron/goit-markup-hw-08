@@ -5,7 +5,6 @@
 .header__container {
   display: flex;
   align-items: center;
-  
 }
 
 .header__nav-list {
@@ -20,7 +19,6 @@
   @media screen and (min-width: 1200px) {
     margin-left: 93px;
   }
-
 }
 
 .header__item:not(:first-child) {
@@ -52,7 +50,7 @@
     width: 100%;
     position: absolute;
     top: 46px;
-    }
+  }
   @media screen and (min-width: 1200px) {
     content: " ";
     display: block;
@@ -65,7 +63,6 @@
     top: 46px;
   }
 }
-
 
 .header__link {
   @media screen and (min-width: 768px) {
@@ -96,7 +93,6 @@
   }
 }
 
-
 .header-contacts {
   margin-left: auto;
   @media screen and (max-width: 480px) {
@@ -113,18 +109,15 @@
     display: flex;
     flex-direction: row;
     margin-left: auto;
-  
   }
 }
-
-
 
 .tel {
   @media screen and (min-width: 768px) {
     color: $accent-second-color;
     margin-right: 0px;
   }
-  
+
   @media screen and (min-width: 1200px) {
     color: $accent-second-color;
     margin-left: 50px;
@@ -166,15 +159,15 @@
 
 .smartphone {
   @media screen and (min-width: 768px) {
-       width: 10px;
-      height: 16px;
-      fill: $icon-color;
-      margin-right: 10px;
-  
-      &:hover {
-        fill: $accent-color;
-      }
+    width: 10px;
+    height: 16px;
+    fill: $icon-color;
+    margin-right: 10px;
+
+    &:hover {
+      fill: $accent-color;
     }
+  }
   @media screen and (min-width: 1200px) {
     width: 10px;
     height: 16px;

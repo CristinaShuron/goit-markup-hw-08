@@ -1,57 +1,57 @@
 .footer {
-    height: 252px;
-    padding: 0;
-    background: #2f303a;
+  height: 252px;
+  padding: 0;
+  background: #2f303a;
 }
 
 .footer__items {
-    display: flex;
-    align-items: baseline;
+  display: flex;
+  align-items: baseline;
 }
 
 .block {
-    margin-right: 70px;
+  margin-right: 70px;
 }
 
 .footer__social-icons {
-    display: flex;
+  display: flex;
 }
-  
+
 .footer__text {
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.4;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: $second-color;
-    margin-top: 75px;
-    margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $second-color;
+  margin-top: 75px;
+  margin-bottom: 20px;
 }
-  
+
 .footer__block {
-    display: flex;
-    width: 250px;
+  display: flex;
+  width: 250px;
 }
-  
+
 .footer__social-items {
-    width: 44px;
-    height: 44px;
-    margin-right: 10px;
-    cursor: pointer;
+  width: 44px;
+  height: 44px;
+  margin-right: 10px;
+  cursor: pointer;
 
   &:last-child {
     margin-right: 0px;
   }
 }
-  
+
 .footer__link {
-    width: 100%; 
-    height: 100%;
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   &:hover {
     background-color: $accent-color;
@@ -60,25 +60,25 @@
     fill: $second-color;
   }
 }
-    
+
 .icon-svg {
-    width: 22px;
-    height: 22px;
-    fill: $second-color;  
+  width: 22px;
+  height: 22px;
+  fill: $second-color;
 }
 
 .box {
-    width: 231px;
+  width: 231px;
 }
-  
+
 .footer__adress {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.7;
-    letter-spacing: 0.03em;
-    color: $second-color;
-    margin-bottom: 8px;
-    text-decoration: none;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  color: $second-color;
+  margin-bottom: 8px;
+  text-decoration: none;
 
   &:hover {
     color: $accent-color;
@@ -90,11 +90,11 @@
 }
 
 .footer__contact-link {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.7;
-    color: rgba(255, 255, 255, 0.6);
-    text-decoration: none;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
 
   &:hover {
     color: $accent-color;
@@ -104,12 +104,12 @@
     outline: 2px solid $accent-color;
   }
 }
- 
+
 .logotip-second {
-    text-decoration: none;
-    cursor: pointer;
-    margin-top: 60px;
-    margin-bottom: 20px;
+  text-decoration: none;
+  cursor: pointer;
+  margin-top: 60px;
+  margin-bottom: 20px;
 
   &:hover {
     text-decoration: underline $accent-color;
@@ -120,45 +120,45 @@
 }
 
 .logo-web-second {
-    font-family: $title-font;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.2;
-    letter-spacing: 0.03em;
-    color: $accent-color;
+  font-family: $title-font;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  color: $accent-color;
 }
 
 .logo-studio-second {
-    font-family: $title-font;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.2;
-    letter-spacing: 0.03em;
-    color: $second-color;
+  font-family: $title-font;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  color: $second-color;
 }
 
 .footer__block-contacts {
-    padding-top: 72px;
-    padding-left: 93px;
-    margin-right: 12px;
+  padding-top: 72px;
+  padding-left: 93px;
+  margin-right: 12px;
 }
 .footer__e-mail {
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: $second-color;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $second-color;
 }
 
 .footer__input {
-    width: 358px;
-    height: 50px;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-    border-radius: 4px;
-    background: #2f303a;
-    margin-top: 17px;
+  width: 358px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background: #2f303a;
+  margin-top: 17px;
 
   &::placeholder {
     font-size: 16px;
@@ -170,35 +170,35 @@
     padding: 15px 0 15px 16px;
   }
 }
-   
+
 .footer__block-comit {
-    position: relative;
-    margin-top: 119px;
+  position: relative;
+  margin-top: 119px;
 }
-  
+
 .footer__button {
-    width: 200px;
-    height: 50px;
-  
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.88;
-    letter-spacing: 0.06em;
-    color: $button-second-color;
-  
-    cursor: pointer;
-    border-color: $accent-color;
-    border-radius: 4px;
-    background: $accent-color;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    padding: 10px 62px 10px 28px;
+  width: 200px;
+  height: 50px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  color: $button-second-color;
+
+  cursor: pointer;
+  border-color: $accent-color;
+  border-radius: 4px;
+  background: $accent-color;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  padding: 10px 62px 10px 28px;
 }
-  
+
 .button-icon {
-    position: absolute;
-    right: 30px;
-    top: 15px;
-    width: 24px;
-    height: 24px;
-    fill: $second-color;
+  position: absolute;
+  right: 30px;
+  top: 15px;
+  width: 24px;
+  height: 24px;
+  fill: $second-color;
 }

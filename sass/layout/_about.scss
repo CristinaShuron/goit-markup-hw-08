@@ -1,7 +1,7 @@
 .about {
   padding-left: auto;
   padding-right: auto;
-   @media screen and (max-width: 1199px) {
+  @media screen and (max-width: 1199px) {
     display: none;
   }
 }
@@ -21,7 +21,7 @@
   width: 1170px;
   display: flex;
   justify-content: center;
-  
+
   padding-bottom: 94px;
   padding-left: 0px;
   margin: 0;
@@ -36,19 +36,19 @@
   margin-right: 30px;
   text-align: center;
 
-&:nth-child(1) {
-  margin-left: 0px;
-}
-  
-&:nth-child(3) {
-  margin-right: -30px;
-}
+  &:nth-child(1) {
+    margin-left: 0px;
+  }
+
+  &:nth-child(3) {
+    margin-right: -30px;
+  }
 }
 
 .work__case {
-display: flex;
-position: relative;
-overflow: hidden;
+  display: flex;
+  position: relative;
+  overflow: hidden;
 }
 
 .work__images {
