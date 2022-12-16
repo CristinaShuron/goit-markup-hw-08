@@ -7,7 +7,6 @@ $breakpoint: (
 .container {
   outline: 2px solid red;
   outline-offset: -2px;
-
   // phone screen 0px & >
   max-width: 480px;
   padding-right: 15px;
@@ -15,15 +14,13 @@ $breakpoint: (
   margin-left: auto;
   margin-right: auto;
 
- //  tablet sreen 768px & >
- @media screen and (min-width: 768px) {
-    max-width: 768px;
-
-  }
+  //  tablet sreen 768px & >
+  @media screen and (min-width: 768px) {
+      max-width: 768px;
+    }
 
   //  dasktop sreen 1200px & >
   @media screen and (min-width: 1200px) {
     max-width: 1200px;
-
   }
 }
