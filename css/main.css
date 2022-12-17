@@ -2181,6 +2181,14 @@ header__nav {
   }
 }
 
+.studia {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.18;
+  letter-spacing: 0.02em;
+  color: #2196F3;
+}
+
 .menu .link {
   padding: 10px;
   color: inherit;
@@ -2212,6 +2220,7 @@ header__nav {
   border: none;
   border-radius: 50%;
   outline: none;
+  background-color: #ffffff;
 }
 
 @media (min-width: 768px) {
@@ -2221,7 +2230,7 @@ header__nav {
 }
 .menu-toggle:hover,
 .menu-toggle:focus {
-  background-color: rgba(0, 0, 0, 0.1);
+  fill: #2196f3;
 }
 
 .menu-container {
@@ -2267,6 +2276,10 @@ header__nav {
   margin: 0;
   list-style: none;
   margin-bottom: auto;
+  cursor: pointer;
+}
+.mobile-menu:hover, .mobile-menu:focus {
+  color: #2196f3;
 }
 
 .mobile-menu .link {

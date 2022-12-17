@@ -2,7 +2,6 @@ header__nav {
   display: none;
 }
 
-
 .menu {
   display: flex;
   padding: 0;
@@ -13,6 +12,13 @@ header__nav {
       display: none;
     }
 
+}
+.studia {
+font-weight: 500;
+font-size: 40px;
+line-height: 1.18;
+letter-spacing: 0.02em;
+color: #2196F3;
 }
 
 .menu .link {
@@ -40,6 +46,7 @@ header__nav {
   border: none;
   border-radius: 50%;
   outline: none;
+  background-color: $second-color;
 }
 
 @media (min-width: 768px) {
@@ -50,7 +57,7 @@ header__nav {
 
 .menu-toggle:hover,
 .menu-toggle:focus {
-  background-color: rgba(0, 0, 0, 0.1);
+  fill: $accent-color;
 }
 
 .menu-container {
@@ -87,6 +94,12 @@ header__nav {
   margin: 0;
   list-style: none;
   margin-bottom: auto;
+  cursor: pointer;
+
+&:hover,
+&:focus {
+  color: $accent-color;
+}
 }
 
 .mobile-menu .link {
