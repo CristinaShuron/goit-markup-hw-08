@@ -62,14 +62,13 @@
 
   @media screen and (min-width: 1200px) {
     display: flex;
-    justify-content: center;
-    width: 1170px;
-
+    justify-content: flex-start;
+    width: 1200px;
     list-style: none;
-
     padding-left: 0px;
     margin-top: 0px;
     margin-bottom: 0px;
+
   }
 
   .social__list {
