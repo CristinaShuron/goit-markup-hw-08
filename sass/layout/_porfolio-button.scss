@@ -11,6 +11,14 @@
   margin-bottom: 34px;
   list-style-type: none;
 
+  @media screen and (min-width: 480px) {
+    display: flex;
+    justify-content: flex-start;
+    width: 480px;
+    flex-wrap: wrap;
+    margin-bottom: 34px;
+    list-style-type: none;
+  }
   @media screen and (min-width: 768px) {
     justify-content: center;
     flex-wrap: nowrap;

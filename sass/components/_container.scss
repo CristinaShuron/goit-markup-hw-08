@@ -5,22 +5,21 @@ $breakpoint: (
 );
 
 .container {
-  // outline: 2px solid red;
-  // outline-offset: -2px;
-  // phone screen 0px & >
-  max-width: 480px;
-  padding-right: 15px;
   padding-left: 15px;
+  padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
 
+  // phone screen 0px & >
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
   //  tablet sreen 768px & >
   @media screen and (min-width: 768px) {
-      max-width: 768px;
-    }
-
+    width: 768px;
+  }
   //  dasktop sreen 1200px & >
   @media screen and (min-width: 1200px) {
-    max-width: 1200px;
+    width: 1200px;
   }
 }

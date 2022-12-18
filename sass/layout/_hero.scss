@@ -60,6 +60,7 @@
 }
 
 .order__tittle {
+  width: auto;
   margin-bottom: 30px;
   margin-left: auto;
   margin-right: auto;
@@ -72,6 +73,20 @@
   letter-spacing: 0.06em;
   text-transform: uppercase;
 
+  @media screen and (min-width: 480px) {
+    width: auto;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 360px;
+    color: $title-second-color;
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.61;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
   @media screen and (min-width: 1200px) {
     width: 696px;
     font-size: 44px;

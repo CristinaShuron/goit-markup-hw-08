@@ -11,6 +11,19 @@
     display: block;
   }
 
+  @media screen and (min-width: 480px) {
+    width: 480px;
+    flex-direction: column;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px;
+    padding: 0px;
+
+    img {
+      display: block;
+    }
+  }
   @media screen and (min-width: 768px) {
     width: 768px;
     display: flex;
@@ -31,6 +44,12 @@
   position: relative;
   overflow: hidden;
 
+  @media screen and (min-width: 480px) {
+    width: 450px;
+    height: 294px;
+    position: relative;
+    overflow: hidden;
+  }
   @media screen and (min-width: 768px) {
     width: 354px;
     height: 294px;
