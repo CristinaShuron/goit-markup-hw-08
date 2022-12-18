@@ -990,8 +990,6 @@ img {
 .gallery__work {
   width: 370px;
   height: 294px;
-  -ms-flex-preferred-size: calc((100% - 370px) / 3);
-      flex-basis: calc((100% - 370px) / 3);
   text-transform: uppercase;
   margin-right: 30px;
   text-align: center;
@@ -1197,8 +1195,6 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .team__item {
-    -ms-flex-preferred-size: calc((100% - 270px) / 4);
-        flex-basis: calc((100% - 270px) / 4);
     width: 270px;
     height: 428px;
     background: #ffffff;

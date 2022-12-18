@@ -135,7 +135,6 @@
   }
 
   @media screen and (min-width: 1200px) {
-    flex-basis: calc((100% - 270px) / 4);
     width: 270px;
     height: 428px;
     background: $second-color;
@@ -146,7 +145,7 @@
     margin-right: 30px;
 
     &:nth-child(4n) {
-      margin-right: -30px; /*4 елементу -30рх зправа */
+      margin-right: -30px;  /*4 елементу -30рх зправа */
     }
   }
 }
