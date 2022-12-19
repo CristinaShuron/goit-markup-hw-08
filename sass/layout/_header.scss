@@ -1,6 +1,11 @@
 .header__page {
   border-bottom: 1px solid #ececec;
+  
+  @media screen and (max-width: 320px) {
+    width: 480px;
+  }
 }
+
 
 .header__container {
   display: flex;
@@ -114,6 +119,10 @@
     flex-direction: row;
     margin-left: auto;
   }
+}
+
+.header-container {
+  width: 480px;
 }
 
 .tel {

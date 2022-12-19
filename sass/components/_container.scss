@@ -4,11 +4,16 @@ $breakpoint: (
   desktop: 1200px,
 );
 
+
 .container { 
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+
+  @media screen and (min-width: 320px) {
+    width: 480px;
+  }
 
   // phone screen 0px & >
   @media screen and (min-width: 480px) {

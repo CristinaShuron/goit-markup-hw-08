@@ -57,6 +57,9 @@
         url(../images/hero/img_des2x.jpg);
     }
   }
+  @media screen and (max-width: 320px) {
+    width: 480px;
+  }
 }
 
 .order__tittle {
@@ -116,3 +119,4 @@
   padding: 10px 32px;
   border-radius: 8px;
 }
+

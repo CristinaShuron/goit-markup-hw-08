@@ -37,12 +37,20 @@
     padding: 0px;
   }
 }
+.work-images {
+  @media screen and (min-width: 320px) {
+    width: 480px;
+  }
+}
 
 .work__projekt-item {
-  width: 450px;
+  width: 480px;
   height: 294px;
   position: relative;
   overflow: hidden;
+  @media screen and (min-width: 320px) {
+    width: 480px;
+  }
 
   @media screen and (min-width: 480px) {
     width: 450px;

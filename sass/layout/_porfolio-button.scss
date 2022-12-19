@@ -1,6 +1,10 @@
 .work__btn {
   padding-top: 94px;
   padding-bottom: 94px;
+
+  @media screen and (max-width: 320px) {
+    width: 480px;
+  }
 }
 
 .work__button-portfolio {

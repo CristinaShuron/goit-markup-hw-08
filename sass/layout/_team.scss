@@ -1,7 +1,12 @@
 .team {
+  width: 1600px;
   width: 100%;
   background: #f5f4fa;
   padding-top: 30px;
+
+  @media screen and (max-width: 320px) {
+    width: 480px;
+  }
 }
 
 .team__title {
